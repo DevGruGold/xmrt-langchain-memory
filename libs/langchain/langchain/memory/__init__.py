@@ -36,6 +36,14 @@ from langchain.memory.buffer import (
 )
 from langchain.memory.buffer_window import ConversationBufferWindowMemory
 from langchain.memory.combined import CombinedMemory
+from langchain.memory.eliza_memory import (
+    ElizaLongTermMemory,
+    ElizaVectorMemory,
+    ElizaChatMessageHistory,
+    ElizaMemoryStore,
+    create_eliza_memory,
+    create_eliza_vector_memory,
+)
 from langchain.memory.entity import (
     ConversationEntityMemory,
     InMemoryEntityStore,
@@ -130,6 +138,10 @@ __all__ = [
     "CosmosDBChatMessageHistory",
     "DynamoDBChatMessageHistory",
     "ElasticsearchChatMessageHistory",
+    "ElizaLongTermMemory",
+    "ElizaVectorMemory",
+    "ElizaChatMessageHistory",
+    "ElizaMemoryStore",
     "FileChatMessageHistory",
     "InMemoryEntityStore",
     "MomentoChatMessageHistory",
@@ -150,4 +162,6 @@ __all__ = [
     "ZepMemory",
     "UpstashRedisEntityStore",
     "UpstashRedisChatMessageHistory",
+    "create_eliza_memory",
+    "create_eliza_vector_memory",
 ]
